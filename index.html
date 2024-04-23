@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chama Cha Mapinduzi (CCM)</title>
+<link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
+<style>
+/* CSS for the navigation menu */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Display the menu items horizontally */
+}
+nav ul li {
+    margin-right: 20px;
+}
+nav ul li:last-child {
+    margin-right: 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+/* CSS for the leader picture divs */
+.leaders-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leader {
+    width: calc(50% - 20px);
+    height:450px;
+    margin-bottom: 20px;
+    position:	relative;
+    animation: shake 0.5s infinite alternate;
+    border: 2px solid #ccc;
+    border-radius:	8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.leader:nth-child(odd) {
+    background-color: #f0f0f0; /* Light gray background for odd leaders */
+}
+
+.leader:nth-child(even) {
+    background-color: #e0e0e0; /* Lighter gray background for even leaders */
+}
+
+.leader img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+</style>
+</head>
+<body>
+      <br><br>
+  <center><img src="Chama_Cha_Mapinduzi_Logo.png" alt="CCM Logo" width="150"	height="150"></center>
+
+<header>
+    <div class="container">
+        <!-- Include the official logo of Chama Cha Mapinduzi -->
+        <nav>
+            <ul>
+                <!-- Navigation links to different sections of the system -->
+                <li><a href="#about" style="color:white">About Us</a></li>
+                <li><a href="#membership" style="color:white">Membership</a></li>
+                <li><a href="#news" style="color:white">News & Updates</a></li>
+                <li><a href="#events" style="color:white">Events</a></li>
+                <li><a href="#contact" style="color:white">Contact Us</a></li>
+                <!-- Add a login link for users -->
+                <li><a href="login.html" style="color:white">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section id="leaders">
+    <div class="container">
+        <h2>Our Leaders</h2>
+        <div class="leaders-container">
+            <div class="leader">
+                <!-- Insert picture of CCM leader 2 -->
+                <img src="John_Magufuli_2015.png" alt="CCM Leader 1" width="480"	height="590">
+            </div>
+
+            <div class="leader">
+                <!-- Insert picture of CCM leader 3 -->
+                <img src="images (7).jpeg" alt="CCM Leader 2"  width="600"	height="560">
+
+            </div>
+            <div class="leader">
+                <!-- Insert picture of CCM leader 4 -->
+                <img src="images (8).jpeg" alt="CCM Leader 4" width="600"	height="560">
+            </div>
+            <div class="leader">
+                <!-- Insert picture of CCM leader 1 -->
+                <img src="Screenshot_20240418-231029.png" alt="CCM Leader 3" width="490"	height="500">
+
+            </div>
+        </div>
+    </div>
+</section>
+<section id="about">
+    <div class="container">
+        <h2>About Chama Cha Mapinduzi</h2>
+        <!-- Provide an overview of CCM's ideology, history, and achievements in Tanzania politics -->
+        <p>Chama Cha Mapinduzi (CCM) is the ruling political party in Tanzania. It has been in power since the country gained independence in 1961.</p>
+        <p>CCM is known for its commitment to socialism, self-reliance, and the development of Tanzania. Over the years, it has played a significant role in shaping the political landscape and policies of the country.</p>
+    </div>
+</section>
+<section id="membership">
+    <div class="container">
+        <h2>Membership</h2>
+        <!-- Provide information about how individuals can become members of CCM -->
+        <p>Becoming a member of Chama Cha Mapinduzi (CCM) is open to all Tanzanian citizens who share the party's values and goals. To join, interested individuals can visit their local CCM office or apply online through the party's official website.</p>
+        <a href="reg.html" class="btn">Join Us</a>
+    </div>
+</section>
+<section id="news">
+    <div class="container">
+        <h2>News & Updates</h2>
+        <!-- Display the latest news, announcements, and updates from CCM -->
+        <p>Stay informed about the latest developments and activities of Chama Cha Mapinduzi (CCM). Explore our news section for updates on party policies, events, and initiatives.</p>
+    </div>
+</section>
+<section id="events">
+    <div class="container">
+        <h2>Upcoming Events</h2>
+        <!-- Highlight upcoming party events, rallies, and campaigns -->
+        <p>Join us at our upcoming events and rallies across Tanzania. Connect with fellow members and show your support for Chama Cha Mapinduzi (CCM) as we work towards building a better future for our nation.</p>
+    </div>
+</section>
+<section id="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <!-- Provide contact information for CCM headquarters and regional offices -->
+        <p>For inquiries, support, or feedback, please contact Chama Cha Mapinduzi (CCM) headquarters or visit your nearest regional office.</p>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <p>Follow Us:</p>
+        <!-- Include links to CCM's official social media profiles -->
+        <ul class="social-media">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>

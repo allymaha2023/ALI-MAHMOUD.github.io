@@ -1,0 +1,77 @@
+/* Global Styles */
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-image: url('Chama_Cha_Mapinduzi_nLogo.PNG');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover; /* Changed to cover for better background image scaling */
+color: #333;
+}
+.container {
+margin: 50px auto; /* Center the container vertically */
+width: 80%;
+max-width: 1000px; /* Set maximum width for better readability */
+background-color: rgba(255, 255, 255, 0.9); /* Increased opacity for better contrast */
+padding: 20px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+border-radius: 10px;
+overflow: hidden; /* Hide overflow content */
+}
+.sidebar {
+height: 100%;
+width: 0; /* Initially hide the sidebar */
+position: fixed;
+top: 0;
+left: 0;
+background-color: #111;
+padding-top: 20px;
+transition: width 0.5s;
+z-index: 1; /* Ensure sidebar stays above other content */
+}
+.sidebar.closed {
+width: 0; /* Hide the sidebar */
+}
+.sidebar.opened {
+width: 200px; /* Adjust the width to your preference */
+}
+.sidebar h2 {
+color: white;
+text-align: center;
+margin-bottom: 30px;
+}
+ul {
+list-style-type: none;
+padding: 0;
+}
+ul li {
+padding: 10px;
+}
+ul li a {
+color: white;
+text-decoration: none;
+display: block;
+background-color: #3b9c3e; /* CCM green color */
+padding: 10px 20px; /* Add padding for better appearance */
+border-radius: 5px; /* Rounded corners */
+margin-bottom: 5px; /* Add spacing between buttons */
+}
+ul li a:hover {
+background-color: #357d34; /* Darker green on hover */
+}
+.content {
+padding: 20px;
+overflow: auto; /* Add scrollbar for overflow content */
+}
+.menu-toggle {
+position: fixed;
+top: 20px;
+left: 20px;
+background-color: transparent;
+color: #3b9c3e;
+border: none;
+font-size: 24px;
+cursor: pointer;
+z-index: 2; /* Ensure menu toggle stays above other content */
+}

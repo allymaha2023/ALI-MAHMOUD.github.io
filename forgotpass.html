@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forgot Password - CCM Member Portal</title>
+<link rel="stylesheet" href="loginAndRegStyles.css">
+<style>
+/* Additional styles specific to the forgot password page */
+body {
+background-color: #f9f9f9; /* Light background color */
+}
+.container {
+max-width: 400px;
+margin: 50px auto;
+padding: 30px;
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.container h2 {
+color: #3b9c3e;
+text-align: center;
+margin-bottom: 20px;
+}
+.input-group {
+margin-bottom: 15px;
+}
+label {
+display: block;
+margin-bottom: 5px;
+color: #555; /* Label color */
+}
+input[type="email"], button {
+width: 100%;
+padding: 10px;
+border-radius: 5px;
+border: 1px solid #ccc;
+box-sizing: border-box;
+outline: none; /* Remove default input focus */
+}
+input[type="email"]:focus, button:focus {
+border-color: #3b9c3e; /* Focus color */
+}
+button {
+background-color: #3b9c3e;
+color: white;
+border: none;
+cursor: pointer;
+transition: background-color 0.3s; /* Smooth hover transition */
+}
+button:hover {
+background-color: #357d34; /* Darker green on hover */
+}
+.extra-info {
+margin-top: 10px;
+text-align: center;
+color: #666; /* Additional info color */
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h2>Forgot Password</h2>
+<form action="#" method="post">
+<div class="input-group">
+<label for="email">Enter your email:</label>
+<input type="email" id="email" name="email" required>
+</div>
+<button type="submit">Submit</button>
+</form>
+<div class="extra-info">
+<a href="login.html">Back to Login</a>
+</div>
+</div>
+</body>
+</html>

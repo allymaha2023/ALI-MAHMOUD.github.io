@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Information</title>
+<link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
+
+<style>
+/* Add your CSS styling here */
+table {
+width: 100%;
+border-collapse: collapse;
+}
+th, td {
+padding: 8px;
+text-align: left;
+border-bottom: 1px solid #ddd;
+}
+tr:hover {
+background-color: #f5f5f5;
+}
+.action-buttons {
+display: flex;
+justify-content: space-around;
+}
+.filter-section {
+margin-bottom: 20px;
+}
+.filter-section label {
+margin-right: 10px;
+}
+</style>
+</head>
+<body>
+      <br><br>
+  <center><img src="Chama_Cha_Mapinduzi_Logo.png" alt="CCM Logo" width="150"	height="150"></center>
+
+<h2>User Information</h2>
+<div class="filter-section">
+<label for="filterCriteria">Filter By:</label>
+<select id="filterCriteria">
+<option value="firstName">First Name</option>
+<option value="middleName">Middle Name</option>
+<option value="lastName">Last Name</option>
+<option value="uvccmNo">UVCCM NO</option>
+<option value="ccmNo">CCM NO</option>
+<option value="electronicNo">Electronic NO</option>
+<option value="gender">Gender</option>
+<option value="email">Email</option>
+<option value="degreeProgram">Degree Program</option>
+<option value="duration">Duration</option>
+<option value="branch">Branch</option>
+</select>
+
+<br>
+<br>
+<input type="text" id="filterValue" placeholder="Enter value to filter" required>
+<button id="filterButton">Filter</button>
+</div>
+<table>
+<thead>
+<tr>
+<th>First Name</th>
+<th>Middle Name</th>
+<th>Last Name</th>
+<th>UVCCM NO</th>
+<th>CCM NO</th>
+<th>ELECTRONIC NO</th>
+<th>Gender</th>
+<th>Email</th>
+<th>Degree Program</th>
+<th>Duration</th>
+<th>Branch</th>
+<th>Photo</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<!-- Sample row, you can add more dynamically with JavaScript -->
+<tr>
+<td>John</td>
+<td>Doe</td>
+<td>Smith</td>
+<td>123456</td>
+<td>789012</td>
+<td>345678</td>
+<td>Male</td>
+<td>john@example.com</td>
+<td>Computer Science</td>
+<td>4 years</td>
+<td>Software Engineering</td>
+<td><img src="path/to/photo.jpg" alt="User Photo" width="50"></td>
+<td class="action-buttons">
+<a href="editUserInfor.html"><button>Edit</button></a>
+<button>Update</button>
+</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

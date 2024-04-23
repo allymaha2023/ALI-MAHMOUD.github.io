@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CCM Admin Dashboard</title>
+<link rel="stylesheet" href="styles.css">
+
+<style>
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f4f4f4; /* Light gray background */
+}
+.menu {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 240px; /* Increased width for larger screens */
+height: 100vh;
+background-color: #292f36; /* Dark gray background */
+padding: 20px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+z-index: 999;
+overflow-y: auto; /* Enable scrolling for long menus */
+}
+.menu-toggle {
+position: fixed;
+top: 20px;
+left: 20px;
+cursor: pointer;
+z-index: 1000;
+}
+.menu-toggle svg {
+fill: #fff; /* White color */
+}
+.menu ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+.menu ul li {
+margin-bottom: 5px; /* Increased spacing between menu items */
+}
+.menu ul li a {
+display: block;
+padding: 10px 20px; /* Added padding to make buttons larger */
+color: #fff; /* White text */
+text-decoration: none;
+border-radius: 5px; /* Rounded corners */
+transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+.menu ul li a:hover {
+background-color: #475a70; /* Darker background color on hover */
+}
+</style>
+</head>
+<body>
+<div class="menu-toggle" onclick="toggleMenu()">
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 12h18M1 6h18M3 18h18" stroke="currentColor" stroke-width="2" strokelinecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+<div class="menu" id="menu">
+<ul>
+<br>
+<br>
+
+<li><a href="regForAdminOnly.html"><i class="fas fa-user-plus"></i> Add Member</a></li>
+<li><a href="viewMember.html"><i class="fas fa-users"></i> View Members</a></li>
+<li><a href="informationCenter.html"><i class="fas fa-file-upload"></i> Information Center</a></li>
+<li><a href="welcome.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+</ul>
+</div>
+<script>
+function toggleMenu() {
+var menu = document.getElementById('menu');
+if (menu.style.display === 'block') {
+menu.style.display = 'none';
+} else {
+menu.style.display = 'block';
+}
+}
+</script>
+</body>
+</html>

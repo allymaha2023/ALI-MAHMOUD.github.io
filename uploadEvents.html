@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Upload Events</title>
+</head>
+<body>
+<h1>Upload Events</h1>
+<form method="post" action="upload_event.php">
+Title: <input type="text" name="title" /><br>
+Description: <textarea name="description"></textarea><br>
+Event Date: <input type="date" name="event_date" /><br>
+Location: <input type="text" name="location" /><br>
+Organizer: <input type="text" name="organizer" /><br>
+<input type="submit"value="upload">
+</form>
+
+<button onclick="location.href='edit_event.php';">Edit</button>
+<button onclick="location.href='delete_event.php';">Delete</button>
+</body>
+</html>

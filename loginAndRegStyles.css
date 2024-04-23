@@ -1,0 +1,154 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select,
+input[type="number"],
+button,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px; /* Increased font size for better readability */
+}
+
+button {
+    background-color: #3b9c3e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+button:hover {
+    background-color: #357d34;
+}
+
+/* Login Page Styles */
+.login-container {
+   // text-align: center; /* Center align the content */
+    max-width: 400px; /* Limit width for better readability */
+    margin: 50px auto; /* Center vertically */
+    padding: 40px;
+}
+
+.login-container h2 {
+    color: #3b9c3e;
+    margin-bottom: 20px;
+}
+
+.extra-info {
+    margin-top: 10px;
+}
+
+.extra-info a {
+    color: #3b9c3e;
+    text-decoration: none;
+}
+
+.extra-info a:hover {
+    text-decoration: underline;
+}
+
+/* Registration Page Styles */
+.registration-container {
+    max-width: 600px; /* Adjusted width for registration form */
+    margin: 50px auto; /* Center vertically */
+    padding: 40px;
+}
+
+.registration-container h2 {
+    color: #3b9c3e;
+    margin-bottom: 20px;
+}
+
+/* Background color for registration page */
+.registration-container {
+    background-color: #fff;
+}
+
+/* Background color for login page */
+.login-container {
+    background-color: #fff;
+}
+
+/* Adjustments for the logo */
+.login-container img,
+.registration-container img {
+    display: block; /* Ensures proper alignment */
+    margin: 0 auto 20px; /* Centers the image */
+}
+
+
+
+
+
+/* Add your CSS styles here */
+.password-strength-container {
+position: relative;
+margin-bottom: 20px;
+}
+.password-strength {
+position: absolute;
+top: 100%;
+left: 0;
+width: 100%;
+background-color: #f9f9f9;
+border: 1px solid #ddd;
+border-top: none;
+padding: 10px;
+display: none;
+z-index: 1;
+}
+.password-strength.show {
+display: block;
+}
+.password-strength strong {
+font-weight: bold;
+}
+.password-strength.weak {
+color: red;
+}
+.password-strength.good {
+color: orange;
+}
+.password-strength.strong {
+color: green;
+}
+.input-group.password-error {
+animation: shake 0.5s;
+}
+@keyframes shake {
+0% { transform: translateX(0); }
+25% { transform: translateX(-5px); }
+50% { transform: translateX(5px); }
+75% { transform: translateX(-5px); }
+100% { transform: translateX(0); }
+}

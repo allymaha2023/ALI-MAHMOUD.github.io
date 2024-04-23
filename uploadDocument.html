@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CCM Information Center</title>
+<link rel="stylesheet" href="loginAndRegStyles.css">
+
+<style>
+/* Add your CSS styling here */
+.section {
+margin-bottom: 20px;
+}
+.section h2 {
+margin-bottom: 10px;
+}
+.form-group {
+margin-bottom: 10px;
+}
+.material-list {
+margin-top: 20px;
+}
+.material-list table {
+width: 100%;
+border-collapse: collapse;
+}
+.material-list th, .material-list td {
+padding: 8px;
+text-align: left;
+border-bottom: 1px solid #ddd;
+}
+.material-list tr:hover {
+background-color: #f5f5f5;
+}
+.material-list .action-buttons {
+display: flex;
+justify-content: space-around;
+}
+button {
+padding: 5px 10px;
+background-color: #4CAF50;
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+button:hover {
+background-color: #45a049;
+}
+</style>
+</head>
+<body>
+<br><br>
+  <center><img src="Chama_Cha_Mapinduzi_Logo.png" alt="CCM Logo" width="150"	height="150"></center>
+
+<h1>CCM Information Center</h1>
+<div class="section">
+<h2>Upload Documents</h2>
+<form>
+<div class="form-group">
+<label for="documentName">Document Name:</label>
+<input type="text" id="documentName" name="documentName" required>
+</div>
+<div class="form-group">
+<label for="documentFile">Choose File:</label>
+<input type="file" id="documentFile" name="documentFile" required>
+</div>
+<button type="submit">Upload Document</button>
+</form>
+</div>
+<div class="section">
+</body>
+</html>
